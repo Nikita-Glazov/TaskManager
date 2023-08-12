@@ -27,7 +27,7 @@ public class TasksTest {
 
     @Test
     public void shouldFindQueryInEpicTrue() {
-        String[] subtasks = { "Написать чек-лист", "Найти дефект", "Завести баг-репорт", "Отправить баг-репорт", "Закрыть задачу" };
+        String[] subtasks = {"Написать чек-лист", "Найти дефект", "Завести баг-репорт", "Отправить баг-репорт", "Закрыть задачу"};
         Task epic = new Epic(31, subtasks);
 
         boolean expected = true;
@@ -38,7 +38,7 @@ public class TasksTest {
 
     @Test
     public void shouldFindQueryInEpicFalse() {
-        String[] subtasks = { "Написать чек-лист", "Найти дефект", "Завести баг-репорт", "Отправить баг-репорт", "Закрыть задачу" };
+        String[] subtasks = {"Написать чек-лист", "Найти дефект", "Завести баг-репорт", "Отправить баг-репорт", "Закрыть задачу"};
         Task epic = new Epic(31, subtasks);
 
         boolean expected = false;
